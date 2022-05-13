@@ -1,0 +1,24 @@
+{
+  "name": "typeorm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "start": "nodemon --exec ts-node ./main.ts",
+    "postgres:up": " docker-compose  -f ./postgres/docker-compose.yml up -d  ",
+    "postgres:down": " docker-compose  -f ./postgres/docker-compose.yml down  "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "fastify": "^3.29.0",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
